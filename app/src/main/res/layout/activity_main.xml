@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     android:orientation="vertical"
     android:padding="8dp"
     tools:context=".MainActivity">
@@ -21,44 +22,45 @@
             android:id="@+id/sc"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
-            >
+            android:gravity="center">
+
             <androidx.appcompat.widget.AppCompatImageView
-                    android:id="@+id/img"
-                    android:layout_width="350dp"
-                    android:layout_height="200dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/billgen" />
+                android:id="@+id/img"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/billgen" />
 
 
-<!--                <androidx.appcompat.widget.AppCompatImageView-->
-<!--                    android:id="@+id/img2"-->
-<!--                    android:layout_width="350dp"-->
-<!--                    android:layout_height="200dp"-->
-<!--                    android:layout_marginTop="16dp"-->
-<!--                    android:layout_marginBottom="16dp"-->
-<!--                    android:scaleType="fitXY"-->
-<!--                    android:src="@drawable/billgen" />-->
+            <!--                <androidx.appcompat.widget.AppCompatImageView-->
+            <!--                    android:id="@+id/img2"-->
+            <!--                    android:layout_width="350dp"-->
+            <!--                    android:layout_height="200dp"-->
+            <!--                    android:layout_marginTop="16dp"-->
+            <!--                    android:layout_marginBottom="16dp"-->
+            <!--                    android:scaleType="fitXY"-->
+            <!--                    android:src="@drawable/billgen" />-->
 
-<!--                <androidx.appcompat.widget.AppCompatImageView-->
-<!--                    android:id="@+id/img3"-->
-<!--                    android:layout_width="350dp"-->
-<!--                    android:layout_height="200dp"-->
-<!--                    android:layout_marginTop="16dp"-->
-<!--                    android:layout_marginBottom="16dp"-->
-<!--                    android:scaleType="fitXY"-->
-<!--                    android:src="@drawable/billgen" />-->
+            <!--                <androidx.appcompat.widget.AppCompatImageView-->
+            <!--                    android:id="@+id/img3"-->
+            <!--                    android:layout_width="350dp"-->
+            <!--                    android:layout_height="200dp"-->
+            <!--                    android:layout_marginTop="16dp"-->
+            <!--                    android:layout_marginBottom="16dp"-->
+            <!--                    android:scaleType="fitXY"-->
+            <!--                    android:src="@drawable/billgen" />-->
 
-<!--                <androidx.appcompat.widget.AppCompatImageView-->
-<!--                    android:id="@+id/img4"-->
-<!--                    android:layout_width="350dp"-->
-<!--                    android:layout_height="200dp"-->
-<!--                    android:layout_marginTop="16dp"-->
-<!--                    android:layout_marginBottom="16dp"-->
-<!--                    android:scaleType="fitXY"-->
-<!--                    android:src="@drawable/billgen" />-->
+            <!--                <androidx.appcompat.widget.AppCompatImageView-->
+            <!--                    android:id="@+id/img4"-->
+            <!--                    android:layout_width="350dp"-->
+            <!--                    android:layout_height="200dp"-->
+            <!--                    android:layout_marginTop="16dp"-->
+            <!--                    android:layout_marginBottom="16dp"-->
+            <!--                    android:scaleType="fitXY"-->
+            <!--                    android:src="@drawable/billgen" />-->
 
         </ScrollView>
 
