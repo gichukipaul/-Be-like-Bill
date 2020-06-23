@@ -7,6 +7,8 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+//import com.bumptech.glide.Glide;
+import com.bumptech.glide.Glide;
 import com.squareup.picasso.Picasso;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,23 +23,24 @@ public class MainActivity extends AppCompatActivity {
         swipeRefreshLayout = findViewById(R.id.swipe);
         imageView1 = findViewById(R.id.img);
 
+        swipeRefreshLayout.setColorSchemeResources(R.color.main_blue_color,R.color.main_orange_color);
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
                 // task ts = new task();
                 // ts.execute();
                 ts();
-                //swipeRefreshLayout.setRefreshing(false);
+                swipeRefreshLayout.setRefreshing(false);
             }
         });
-        swipeRefreshLayout.setRefreshing(false);
+
     }
 
     public void ts() {
-        imageView1.setBackgroundColor(Color.parseColor("#00ff00"));
-        Picasso.get().load("https://belikebill.ga/billgen-API.php?default=1")
-                .into(imageView1);
-        swipeRefreshLayout.setRefreshing(false);
+        //imageView1.setImageResource(R.drawable.billgen);
+        //Picasso.get().load("https://belikebill.ga/billgen-API.php?default=1")
+         //       .into(imageView1);
+        Glide.with(this).load("https://belikebill.ga/billgen-API.php?default=1").into(imageView1);
     }
 
 
