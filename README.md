@@ -3,3 +3,6 @@ Be like Bill is an android app that loads a meme from the the API https://belike
 <br>
 <h4>HOW IT WORKS</h4>
 Just swipe down to fetch a new meme.
+
+# NOTICE
+This project was abandoned. The API was phased out of service.
